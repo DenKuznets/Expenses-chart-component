@@ -1,4 +1,5 @@
 import Header from "./Components/Header";
+import Container from "./Components/Styled/Container.styled";
 import "./App.css";
 
 function App() {
