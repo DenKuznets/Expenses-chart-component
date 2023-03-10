@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import desktopWidth from '../../../constants'
 const circleSize = "2.5em";
 
 const StyledHeader = styled.header`
+  
   background-color: hsl(10, 79%, 65%);
   color: white;
   border-radius: 10px;
@@ -9,7 +11,7 @@ const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   padding: 1em 1.2em;
-  @media (min-width: ${({ theme }) => theme.desktop}) {
+  @media (min-width: ${desktopWidth}) {
     padding: 0 1.8em;
     height: 120px;
     border-radius: 16px;
@@ -22,7 +24,7 @@ const StyledHeader = styled.header`
     margin-right: auto;
   }
   .balance__header {
-    @media (min-width: ${({ theme }) => theme.desktop}) {
+    @media (min-width: ${desktopWidth}) {
       font-size: 0.9em;
       line-height: 1.8;
     }
@@ -31,7 +33,7 @@ const StyledHeader = styled.header`
   .balance__numbers {
     font-size: 1.5rem;
     font-weight: 700;
-    @media (min-width: ${({ theme }) => theme.desktop}) {
+    @media (min-width: ${desktopWidth}) {
       font-size: 2rem;
     }
   }
@@ -40,7 +42,7 @@ const StyledHeader = styled.header`
   .balance__black-circle {
     height: ${circleSize};
     width: ${circleSize};
-    border-radius: 50%;   
+    border-radius: 50%;
   }
 
   .balance__white-circle {
@@ -52,7 +54,6 @@ const StyledHeader = styled.header`
 
   .balance__black-circle {
     background-color: black;
-  
   }
 `;
 
