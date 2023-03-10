@@ -1,4 +1,4 @@
-import React from "react";
+
 import StyledHeader from "./Styled/Header.styled";
 
 function Header() {
