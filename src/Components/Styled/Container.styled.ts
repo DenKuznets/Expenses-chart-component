@@ -5,8 +5,12 @@ const Container = styled.div`
   flex-direction: column;
   max-width: 375px;
   margin: auto;
-  background-color: hsl(27, 66%, 92%);
   padding: 4em 1em;
+  @media (min-width: ${({ theme }) => theme.desktop}) {
+    max-width: 575px;
+    /* удалить paddint top после допила */
+    padding-top: 11.5em;
+  }
 `;
 
 export default Container;

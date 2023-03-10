@@ -75,4 +75,5 @@ select {
 
 body {
   font-family: 'DM Sans', sans-serif;
+  background-color: hsl(27, 66%, 92%);
 }
