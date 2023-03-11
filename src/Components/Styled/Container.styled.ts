@@ -7,10 +7,10 @@ const Container = styled.div`
   max-width: 375px;
   margin: auto;
   padding: 4em 1em;
+  gap: 16px;
   @media (min-width: ${desktopWidth}) {
-    max-width: 575px;
-    /* удалить paddint top после допила */
-    padding-top: 11.5em;
+    gap: 26px;
+    max-width: 575px;  
   }
 `;
 

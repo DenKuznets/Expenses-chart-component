@@ -1,0 +1,1 @@
+остановился на Main -> Spending -> Total
