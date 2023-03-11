@@ -1,4 +1,6 @@
-import {Bar, StyledSpending} from './Styled/Spending.styled'
+import { format } from "date-fns";
+import Bar from "./Bar";
+import { StyledSpending } from "./Styled/Spending.styled";
 
 interface Props {
   data: {
@@ -11,7 +13,10 @@ const Spending: React.FC<Props> = ({ data }) => {
   const days = data.map((obj, index) => {
     return (
       <div key={index} className="day">
-        <Bar height={obj.amount}></Bar>
+        <Bar
+          currentDay={format(new Date(), "EEE").toLowerCase() === obj.day}
+          amount={obj.amount}
+        ></Bar>
         {obj.day}
       </div>
     );

@@ -1,1 +1,1 @@
-остановился на Main -> Spending -> Total
+hover over the individual bars to see the correct amounts for each day
